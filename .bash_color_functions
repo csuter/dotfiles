@@ -1,0 +1,26 @@
+set_fg() {
+  echo '\033[38;2;'"${1}"'m'
+}
+
+set_bg() {
+  echo '\033[48;2;'"${1}"'m'
+}
+
+reset_style() {
+  echo '\033[00m'
+}
+
+colored() {
+  fg=${1}
+  bg=${2}
+  shift; shift
+  echo "$(set_fg "${fg}")$(set_bg "${bg}")${@}$(reset_style)"
+}
+
+bold() {
+  echo '\033[1m'
+}
+
+divider() {
+  echo "$(colored "${1}" "${2}" '')"
+}
