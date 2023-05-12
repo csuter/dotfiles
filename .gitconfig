@@ -1,0 +1,44 @@
+[user]
+  email = cgs@google.com
+  name = Christopher Suter
+[alias]
+  st = !git --no-pager status
+  statsu = status
+
+  # show commit log in graph format with some fancy highlighting. the below
+  # commands are minor variations on this; we include the line breaks here to
+  # increase clarity.
+  gr = !git \
+    -c color.diff=always \
+    --no-pager \
+    log -n 16 --graph --date-order --date=short --branches \
+    --all \
+    --pretty=\
+'%C(green bold)%h%Creset\
+ %C(red)%ad%Creset\
+ %Creset %C(blue bold)%d%Creset\
+ %C(white bold)%s'
+
+  # same as above but more history
+  grr = !git -c color.diff=always log --all -n 25 --graph --date-order --date=short --branches --pretty='%C(green bold)%h%Creset %C(red)%ad%Creset%C(blue bold)%d%Creset %C(white bold)%s%Creset'
+  grrr = !git -c color.diff=always log --all -n 50 --graph --date-order --date=short --branches --pretty='%C(green bold)%h%Creset %C(red)%ad%Creset %C(blue bold)%d%Creset %C(white bold)%s%Creset'
+  grrrr = !git -c color.diff=always log --all --graph --date-order --date=short --branches --pretty='%C(green bold)%h%Creset %C(red)%ad %Creset %C(blue bold)%d%Creset %C(white bold)%s%Creset'
+
+  diff = !git diff --histogram --color-words
+  chekcout = checkout
+  checkotu = checkout
+  chckout = checkout
+  co = checkout
+  crf = commit -am'Critique feedback'
+  cft = commit -am'Fix tests'
+  cherrypick = cherry-pick
+[core]
+  excludesfile = ~/.gitignore
+[mergetool]
+  keepBackup = false
+[mergetool "fugitive"]
+  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[merge]
+  tool = fugitive
+[http]
+	cookiefile = /home/cgs/.gitcookies

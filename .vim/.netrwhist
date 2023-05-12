@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/google/src/cloud/cgs/colab/google3/research/probability/electricsheep/util'
+let g:netrw_dirhist_5='/google/src/cloud/cgs/colab/google3/research/probability/electricsheep'
+let g:netrw_dirhist_4='/google/src/cloud/cgs/colab/google3/research/probability/electricsheep/data'
+let g:netrw_dirhist_3='/google/src/cloud/cgs/colab/google3/research/probability/electricsheep'
+let g:netrw_dirhist_2='/google/src/cloud/cgs/colab/google3/research/probability/electricsheep/nerf'
+let g:netrw_dirhist_1='/google/src/cloud/cgs/colab/google3'

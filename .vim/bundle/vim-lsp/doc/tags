@@ -1,0 +1,12 @@
+vim-lsp	vim-lsp.txt	/*vim-lsp*
+vim-lsp-configure	vim-lsp.txt	/*vim-lsp-configure*
+vim-lsp-configure-wiki	vim-lsp.txt	/*vim-lsp-configure-wiki*
+vim-lsp-contents	vim-lsp.txt	/*vim-lsp-contents*
+vim-lsp-functions	vim-lsp.txt	/*vim-lsp-functions*
+vim-lsp-install	vim-lsp.txt	/*vim-lsp-install*
+vim-lsp-introduction	vim-lsp.txt	/*vim-lsp-introduction*
+vim-lsp-language-servers	vim-lsp.txt	/*vim-lsp-language-servers*
+vim-lsp-license	vim-lsp.txt	/*vim-lsp-license*
+vim-lsp-register_server	vim-lsp.txt	/*vim-lsp-register_server*
+vim-lsp-server_info	vim-lsp.txt	/*vim-lsp-server_info*
+vim-lsp.txt	vim-lsp.txt	/*vim-lsp.txt*
