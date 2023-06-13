@@ -4,7 +4,7 @@
 
 export EDITOR='nvim'
 export C_VIM_TEMP_FILE=/tmp/cvim.tmp
-export TERM=xterm-256color
+export TERM=xterm-24bits
 
 # If not running interactively, don't do anything else
 [ -z "$PS1" ] && return

@@ -42,8 +42,8 @@ be_fast() {
 }
 
 make_prompt() {
-  LIGHT_BLUE='0;135;255'
-  DARK_BLUE='0;95;255'
+  LIGHT_RED='200;0;0'
+  DARK_RED='0;95;255'
   BLACK='0;0;0'
   GREEN='0;200;135'
   PURPLE='135;0;255'
@@ -52,7 +52,7 @@ make_prompt() {
   echo -e "$(set_fg $WHITE)"
   echo -e "
     $WHITE $GREEN $(be_fast virtualenv_info)
-    $WHITE $LIGHT_BLUE $(be_fast pwd_info)
+    $WHITE $LIGHT_RED $(be_fast pwd_info)
     $WHITE $PURPLE   $(be_fast git_branch_info)
     $BLACK $BLACK X " \
       | while read fg bg text; do
